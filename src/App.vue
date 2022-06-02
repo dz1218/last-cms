@@ -1,6 +1,8 @@
 <template>
   <div class="app">
     <router-view></router-view>
+    <h2 class="aa">rrrrrrrrrrrrrr</h2>
+    111
   </div>
 </template>
 
