@@ -13,5 +13,7 @@ import 'element-plus/theme-chalk/index.css'
 import './assets/css/index.less'
 import 'normalize.css'
 
-createApp(App).use(router).use(store).use(ElementPlus).mount('#app')
+const app = createApp(App)
+
 setLocalCache()
+app.use(router).use(store).use(ElementPlus).mount('#app')

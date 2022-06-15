@@ -1,7 +1,7 @@
-import { createStore } from 'vuex'
+import { createStore, Store, useStore as useVuexStore } from 'vuex'
 
 import login from './login/index'
-import { IRootState } from './types'
+import { IRootState, IStoreType } from './types'
 
 import localCache from '@/utils/cache'
 
@@ -19,6 +19,10 @@ const store = createStore<IRootState>({
 
 export function setLocalCache() {
   store.dispatch('login/loadLocalLoginCache')
+}
+
+export function useStore(): Store<IStoreType> {
+  return useVuexStore()
 }
 
 export default store

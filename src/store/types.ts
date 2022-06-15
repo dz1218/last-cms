@@ -8,3 +8,9 @@ export interface ILoginState {
   userInfo: any
   userMenus: any
 }
+
+export interface IRootWithModule {
+  login: ILoginState
+}
+
+export type IStoreType = IRootState & IRootWithModule
