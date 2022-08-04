@@ -2,6 +2,8 @@ import { createStore, Store, useStore as useVuexStore } from 'vuex'
 
 import login from './login/index'
 import { IRootState, IStoreType } from './types'
+import dashboardModule from './main/analysis/dashboard'
+import system from './main/system/system'
 
 import localCache from '@/utils/cache'
 
@@ -13,7 +15,9 @@ const store = createStore<IRootState>({
     }
   },
   modules: {
-    login
+    login,
+    system,
+    dashboardModule
   }
 })
 

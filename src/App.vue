@@ -19,4 +19,9 @@ export default defineComponent({
 .app {
   height: 100%;
 }
+
+.x {
+  height: 100px;
+  background-color: red;
+}
 </style>
